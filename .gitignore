@@ -1,7 +1,5 @@
-*
-!*.c
-!*.cpp
-!*.py
-!*.hs
-!*.txt
-
+*.hi
+*.o
+*.exe
+*.in
+*.out
