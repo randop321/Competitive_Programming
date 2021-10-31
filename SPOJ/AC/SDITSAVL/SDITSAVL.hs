@@ -1,6 +1,6 @@
 --- Treap with only insert and find operators
 --- It is very hard to pass the problem in the time constraint.
---- In order to same time, I combine the three vars value, cnt (the number of nodes in the tree), rand (a random number used in treap) into one Int as v = value * (2**36) + cnt * (2**18) + rand.
+--- In order to speed up, I combine the three vars value, cnt (the number of nodes in the tree), rand (a random number used in treap) into one Int as v = value * (2**36) + cnt * (2**18) + rand.
 --- I also use ByteString to get input data, which is about 0.2s~0.3s time save compared with (read. getLine) on my computer.
 
 
