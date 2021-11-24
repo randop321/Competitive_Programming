@@ -13,12 +13,15 @@ import Text.Printf
 
 readInt = fst . fromJust . BS.readInt
 readIntList = map readInt . BS.words
-
 getInt = readInt <$> BS.getLine
 getIntList = readIntList <$> BS.getLine
 
-getStrLn = BS.unpack <$> BS.getLine
+readInteger = fst . fromJust . BS.readInteger
+readIntegerList = map readInteger . BS.words
+getInteger = readInteger <$> BS.getLine
+getIntegerList = readIntegerList <$> BS.getLine
 
+getStrLn = BS.unpack <$> BS.getLine
 
 putListLn = \x -> putStrLn $ tail $ x >>=  (' ':) . show
 
